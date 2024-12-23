@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Gallery</title>
+    <style>
+    /* Global Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: #ffffff;
+    }
+
+    /* Header Styles */
+    header {
+        width: 100%;
+        background: #142850;
+        padding: 15px 0;
+        color: white;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        border-bottom: 3px solid #00a8cc;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        color: #00a8cc;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 1.2rem;
+        padding: 8px 15px;
+        border-radius: 20px;
+        border: 2px solid #00a8cc;
+        transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #00a8cc;
+        color: #142850;
+    }
+
+    nav a.active {
+        background-color: #00a8cc;
+        color: #142850;
+    }
+
+    /* Container Styles */
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 25px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        margin: 20px 0;
+    }
+
+    h1, h3 {
+        text-align: center;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: #dfe4ea;
+    }
+
+    /* Task List Styles */
+    .task-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Individual Task Styles */
+    .task-list li {
+        background: linear-gradient(145deg, #ffffff, #f1f1f1);
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+    }
+
+    .task-list li:hover {
+        background: #00a8cc;
+        color: white;
+        transform: translateY(-5px);
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4), -5px -5px 12px rgba(255, 255, 255, 0.6);
+    }
+
+    .task-list li a {
+        text-decoration: none;
+        color: #142850;
+        font-weight: 700;
+        font-size: 1.2rem;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .task-list li a:hover {
+        transform: scale(1.05);
+        color: white;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .task-list {
+            grid-template-columns: 1fr;
+        }
+
+        nav a {
+            font-size: 1rem;
+        }
+    }
+</style>
+
+</head>
+<body>
+<header>
+        <h1 style="font-family: 'Times New Roman', Times, serif; color: red; text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;">Internship Diary</h1>
+		<nav style="font-family: 'Times New Roman', Times, serif;">
+			<a href="#html-css">HTML & CSS Tasks</a>
+			<a href="#javascript">JavaScript Tasks</a>
+			<a href="#sql">SQL Tasks</a>
+			<a href="#python">Python Tasks</a>
+		</nav>
+
+    </header>
+    <div class="container">
+        <div class="left-column">
+		<div id="html-css">
+
+            <h1>HTML & CSS Tasks</h1>
+            <h3>These are the tasks that I performed during my HTML & CSS internship phase.</h3>
+            <ul class="task-list">
+                <li><a href="HTML & CSS/Task 1.html" target="_blank" aria-label="Task 1: Coming Soon Button">TASK 1: COMING SOON BUTTON</a></li>
+				<li><a href="HTML & CSS/Task 2.html" target="_blank" aria-label="Task 2: Speech Bubble">TASK 2: SPEECH BUBBLE</a></li>
+				<li><a href="HTML & CSS/Task 3.html" target="_blank" aria-label="Task 3: Cookie Consent Pop-Up">TASK 3: COOKIE CONSENT POP-UP</a></li>
+				<li><a href="HTML & CSS/Task 4.html" target="_blank" aria-label="Task 4: Over-Lap Block Layout">TASK 4: OVER-LAP BLOCK LAYOUT</a></li>
+				<li><a href="HTML & CSS/Task 5.html" target="_blank" aria-label="Task 5: Drag and Drop Files">TASK 5: DRAG AND DROP FILES</a></li>
+				<li><a href="HTML & CSS/Task 6.html" target="_blank" aria-label="Task 6: Embed the YouTube Video">TASK 6: EMBED THE YOUTUBE VIDEO</a></li>
+				<li><a href="HTML & CSS/Task 7.html" target="_blank" aria-label="Task 7: Book Review">TASK 7: BOOK REVIEW</a></li>
+				<li><a href="HTML & CSS/Task 8.html" target="_blank" aria-label="Task 8: CSS Grid Layout">TASK 8: CSS GRID LAYOUT</a></li>
+				<li><a href="HTML & CSS/Task 9.html" target="_blank" aria-label="Task 9: Newsletter Subscription">TASK 9: NEWSLETTER SUBSCRIPTION</a></li>
+				<li><a href="HTML & CSS/Task 10.html" target="_blank" aria-label="Task 10: Glowing Text">TASK 10: GLOWING TEXT</a></li>
+				<li><a href="HTML & CSS/Task 11.html" target="_blank" aria-label="Task 11: Top Navigation Bar">TASK 11: TOP NAVIGATION BAR</a></li>
+				<li><a href="HTML & CSS/Task 12.html" target="_blank" aria-label="Task 12: Error-404">TASK 12: ERROR-404</a></li>
+				<li><a href="HTML & CSS/Task 13.html" target="_blank" aria-label="Task 13: Responsive Grid">TASK 13: RESPONSIVE GRID</a></li>
+				<li><a href="HTML & CSS/Task 14.html" target="_blank" aria-label="Task 14: Profile Card">TASK 14: PROFILE CARD</a></li>
+				<li><a href="HTML & CSS/Task 15.html" target="_blank" aria-label="Task 15: Collapsible Panel">TASK 15: COLLAPSIBLE PANEL</a></li>
+				<li><a href="HTML & CSS/Task 16.html" target="_blank" aria-label="Task 16: Project Timeline">TASK 16: PROJECT TIMELINE</a></li>
+				<li><a href="HTML & CSS/Task 17.html" target="_blank" aria-label="Task 17: Service Page">TASK 17: SERVICE PAGE</a></li>
+				<li><a href="HTML & CSS/Task 18.html" target="_blank" aria-label="Task 18: Contact Us">TASK 18: CONTACT US</a></li>
+				<li><a href="HTML & CSS/Task 19.html" target="_blank" aria-label="Task 19: Testimonials">TASK 19: TESTIMONIALS</a></li>
+				<li><a href="HTML & CSS/Task 20.html" target="_blank" aria-label="Task 20: Pricing Table">TASK 20: PRICING TABLE</a></li>
+				<li><a href="HTML & CSS/Task 21.html" target="_blank" aria-label="Task 21: Feedback Form">TASK 21: FEEDBACK FORM</a></li>
+				<li><a href="HTML & CSS/Task 22.html" target="_blank" aria-label="Task 22: Responsive Grid Layout">TASK 22: RESPONSIVE GRID LAYOUT</a></li>
+				<li><a href="HTML & CSS/Task 23.html" target="_blank" aria-label="Task 23: Skewed Sections">TASK 23: SKEWED SECTIONS</a></li>
+				<li><a href="HTML & CSS/Task 24.html" target="_blank" aria-label="Task 24: Expanding Menu">TASK 24: EXPANDING MENU</a></li>
+				<li><a href="HTML & CSS/Task 25.html" target="_blank" aria-label="Task 25: Job Listing">TASK 25: JOB LISTING</a></li>
+				<li><a href="HTML & CSS/Task 26.html" target="_blank" aria-label="Task 26: Dashboard Cards">TASK 26: DASHBOARD CARDS</a></li>
+				<li><a href="HTML & CSS/Task 27.html" target="_blank" aria-label="Task 27: Vertical Tabs">TASK 27: VERTICAL TABS</a></li>
+				<li><a href="HTML & CSS/Task 28.html" target="_blank" aria-label="Task 28: Event Invitation">TASK 28: EVENT INVITATION</a></li>
+				<li><a href="HTML & CSS/Task 29.html" target="_blank" aria-label="Task 29: Fitness Tracker">TASK 29: FITNESS TRACKER</a></li>
+				<li><a href="HTML & CSS/Task 30.html" target="_blank" aria-label="Task 30: Personal Portfolio">TASK 30: PERSONAL PORTFOLIO</a></li>
+            </ul>
+        </div>
+		<div id="javascript">
+        <div class="right-column">
+            <h1>JavaScript Tasks</h1>
+            <h3>These are the JavaScript tasks I worked on.</h3>
+			<ul class="task-list">
+				<li><a href="JavaScript/T1.html" target="_blank" aria-label="Task 1: Background Color Picker">TASK 1: BACKGROUND COLOR PICKER</a></li>
+				<li><a href="JavaScript/T2.html" target="_blank" aria-label="Task 2: Newsletter Subscription">TASK 2: NEWSLETTER SUBSCRIPTION</a></li>
+				<li><a href="JavaScript/T3.html" target="_blank" aria-label="Task 3: Countdown to Event">TASK 3: COUNTDOWN TO EVENT</a></li>
+				<li><a href="JavaScript/T4.html" target="_blank" aria-label="Task 4: Name Formatter">TASK 4: NAME FORMATTER</a></li>
+				<li><a href="JavaScript/T5.html" target="_blank" aria-label="Task 5: User Authentication">TASK 5: USER AUTHENTICATION</a></li>
+				<li><a href="JavaScript/T6.html" target="_blank" aria-label="Task 6: Pattern Generator">TASK 6: PATTERN GENERATOR</a></li>
+				<li><a href="JavaScript/T7.html" target="_blank" aria-label="Task 7: Weather App (Mock)">TASK 7: WEATHER APP (MOCK)</a></li>
+				<li><a href="JavaScript/T8.html" target="_blank" aria-label="Task 8: Interactive Greeting Page">TASK 8: INTERACTIVE GREETING PAGE</a></li>
+				<li><a href="JavaScript/T9.html" target="_blank" aria-label="Task 9: Personal Diary">TASK 9: PERSONAL DIARY</a></li>
+				<li><a href="JavaScript/T10.html" target="_blank" aria-label="Task 10: Simple To-Do List">TASK 10: SIMPLE TO-DO LIST</a></li>
+				<li><a href="JavaScript/T11.html" target="_blank" aria-label="Task 11: Name Reverser">TASK 11: NAME REVERSER</a></li>
+				<li><a href="JavaScript/T12.html" target="_blank" aria-label="Task 12: Music Playlist">TASK 12: MUSIC PLAYLIST</a></li>
+				<li><a href="JavaScript/T13.html" target="_blank" aria-label="Task 13: Simple Calculator">TASK 13: SIMPLE CALCULATOR</a></li>
+				<li><a href="JavaScript/T14.html" target="_blank" aria-label="Task 14: Random Joke Generator">TASK 14: RANDOM JOKE GENERATOR</a></li>
+				<li><a href="JavaScript/T15.html" target="_blank" aria-label="Task 15: Mad Libs Game">TASK 15: MAD LIBS GAME</a></li>
+				<li><a href="JavaScript/T16.html" target="_blank" aria-label="Task 16: Word Counter">TASK 16: WORD COUNTER</a></li>
+				<li><a href="JavaScript/T17.html" target="_blank" aria-label="Task 17: Age Calculator">TASK 17: AGE CALCULATOR</a></li>
+				<li><a href="JavaScript/T18.html" target="_blank" aria-label="Task 18: Pomodoro Timer">TASK 18: POMODORO TIMER</a></li>
+				<li><a href="JavaScript/T19.html" target="_blank" aria-label="Task 19: Temperature Converter">TASK 19: TEMPERATURE CONVERTER</a></li>
+				<li><a href="JavaScript/T20.html" target="_blank" aria-label="Task 20: Notes App">TASK 20: NOTES APP</a></li>
+				<li><a href="JavaScript/T21.html" target="_blank" aria-label="Task 21: Rock Paper Scissors Game">TASK 21: ROCK PAPER SCISSORS GAME</a></li>
+				<li><a href="JavaScript/T22.html" target="_blank" aria-label="Task 22: Shopping List">TASK 22: SHOPPING LIST</a></li>
+				<li><a href="JavaScript/T23.html" target="_blank" aria-label="Task 23: Expense Tracker">TASK 23: EXPENSE TRACKER</a></li>
+				<li><a href="JavaScript/T24.html" target="_blank" aria-label="Task 24: BMI Calculator">TASK 24: BMI CALCULATOR</a></li>
+				<li><a href="JavaScript/T25.html" target="_blank" aria-label="Task 25: Countdown Timer">TASK 25: COUNTDOWN TIMER</a></li>
+				<li><a href="JavaScript/T26.html" target="_blank" aria-label="Task 26: Flashcards">TASK 26: FLASHCARDS</a></li>
+				<li><a href="JavaScript/T27.html" target="_blank" aria-label="Task 27: Number Guessing Game">TASK 27: NUMBER GUESSING GAME</a></li>
+				<li><a href="JavaScript/T28.html" target="_blank" aria-label="Task 28: Loan Calculator">TASK 28: LOAN CALCULATOR</a></li>
+				<li><a href="JavaScript/T29.html" target="_blank" aria-label="Task 29: Simple Form Validation">TASK 29: SIMPLE FORM VALIDATION</a></li>
+				<li><a href="JavaScript/T30.html" target="_blank" aria-label="Task 30: Stopwatch">TASK 30: STOPWATCH</a></li>
+			</ul>
+        </div>
+    </div>
+    <div id="sql">
+    <h1>SQL Tasks</h1>
+    <h3>These are the SQL tasks I worked on.</h3>
+    <ul class="task-list">
+        <li><a href="SQL/SQL Day 1.html" target="_blank" aria-label="SQL Day 1">SQL DAY 1</a></li>
+        <li><a href="SQL/SQL Day 2.html" target="_blank" aria-label="SQL Day 2">SQL DAY 2</a></li>
+        <li><a href="SQL/SQL Day 3.html" target="_blank" aria-label="SQL Day 3">SQL DAY 3</a></li>
+        <li><a href="SQL/SQL Day 4.html" target="_blank" aria-label="SQL Day 4">SQL DAY 4</a></li>
+        <li><a href="SQL/SQL Day 5.html" target="_blank" aria-label="SQL Day 5">SQL DAY 5</a></li>
+        <li><a href="SQL/SQL Day 6.html" target="_blank" aria-label="SQL Day 6">SQL DAY 6</a></li>
+        <li><a href="SQL/SQL Day 7.html" target="_blank" aria-label="SQL Day 7">SQL DAY 7</a></li>
+        <li><a href="SQL/SQL Day 8.html" target="_blank" aria-label="SQL Day 8">SQL DAY 8</a></li>
+        <li><a href="SQL/SQL Day 9.html" target="_blank" aria-label="SQL Day 9">SQL DAY 9</a></li>
+        <li><a href="SQL/SQL Day 10.html" target="_blank" aria-label="SQL Day 10">SQL DAY 10</a></li>
+    </ul>
+</div>
+ <div id="python">
+            <h1>Python Tasks</h1>
+            <h3>These are the Python tasks I worked on during my internship.</h3>
+            <ul class="task-list">
+                 <li><a href="https://colab.research.google.com/drive/1sVXEKcqpMlNZKTPDHbPNPH1TtQNYU2_K?usp=drive_link" target="_blank" aria-label="Python Day 1">Python Day 1</a></li>
+    <li><a href="https://colab.research.google.com/drive/1ziDZzBJDMxeCU5vDXbY2QIu2IwkxSgYm?usp=drive_link" target="_blank" aria-label="Python Day 2">Python Day 2</a></li>
+    <li><a href="https://colab.research.google.com/drive/1PAfH_tZVASx3UXgPykEC1GgCp7lmrO9Y?usp=drive_link" target="_blank" aria-label="Python Day 3">Python Day 3</a></li>
+    <li><a href="https://colab.research.google.com/drive/1qX03zP9a_jIQPZcatNM50BB9YIWhvc0p?usp=drive_link" target="_blank" aria-label="Python Day 4">Python Day 4</a></li>
+    <li><a href="https://colab.research.google.com/drive/13gKENE6r354rqzwlarRAm6J8-PgkJn-w?usp=drive_link" target="_blank" aria-label="Python Day 5">Python Day 5</a></li>
+    <li><a href="https://colab.research.google.com/drive/1ddryLvywctIV7805AZLvQdbuR8b687tB?usp=drive_link" target="_blank" aria-label="Python Day 6">Python Day 6</a></li>
+    <li><a href="https://colab.research.google.com/drive/1GYW_-DW6Z3a3mLeROkwF54bHgq25oGdP?usp=drive_link" target="_blank" aria-label="Python Day 7">Python Day 7</a></li>
+    <li><a href="https://colab.research.google.com/drive/1LswTgUoxEZrjFTXW_aBl3PyjhDLeoFK4?usp=drive_link" target="_blank" aria-label="Python Day 8">Python Day 8</a></li>
+    <li><a href="https://colab.research.google.com/drive/1pDyy1svla75d3IWbpmWWcK1MZ8JotoPH?usp=drive_link" target="_blank" aria-label="Python Day 9">Python Day 9</a></li>
+    <li><a href="https://colab.research.google.com/drive/1xKjqjgosseTC0odgrpvbrLtdKCoU7D-B?usp=drive_link" target="_blank" aria-label="Python Day 10">Python Day 10</a></li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
